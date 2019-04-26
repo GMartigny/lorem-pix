@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "bin": "cli.js",
   "author": "GMartigny <guillaume.martigny@gmail.com>",
   "license": "MIT",
   "dependencies": {
