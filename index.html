@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem Pix</title>
+    <link rel="stylesheet" type="text/css" href="front/main.css"/>
+</head>
+<body>
+<h1>Lorem pix</h1>
+<p></p>
+<form id="form">
+    <label for="width">Width</label>
+    <input type="number" name="width" id="width"/>
+    <label for="height">Height</label>
+    <input type="number" name="height" id="height"/>
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color"/>
+</form>
+<div id="preview"></div>
+<script>
+const form = document.getElementById("form");
+const previewWrapper = document.getElementById("preview");
+let timeout = null;
+
+form.addEventListener("change", () => {
+    const { width, height, color } = form;
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+        livePreview(previewWrapper, width, height, color);
+    }, 500);
+});
+</script>
+<script src="front/live-preview.js"></script>
+</body>
+</html>
