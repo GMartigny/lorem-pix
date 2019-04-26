@@ -1,0 +1,7 @@
+.idea/
+node_modules/
+.gitignore
+.npmignore
+cli.js
+license
+readme.md
