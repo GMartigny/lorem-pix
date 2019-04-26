@@ -1,0 +1,11 @@
+{
+  "name": "lorem-pix",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "GMartigny <guillaume.martigny@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^2.4.1"
+  }
+}
