@@ -1,3 +1,6 @@
 .idea/
-cli.js
-lorem.png
+front/
+.nowignore
+api.js
+index.html
+now.json
