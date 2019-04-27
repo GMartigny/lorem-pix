@@ -7,6 +7,14 @@
             "config": {
                 "maxLambdaSize": "40mb"
             }
+        },
+        {
+            "src": "index.html",
+            "use": "@now/html-minifier"
+        },
+        {
+            "src": "/front/*",
+            "use": "@now/static"
         }
     ],
     "routes": [
