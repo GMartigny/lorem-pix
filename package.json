@@ -8,9 +8,20 @@
   "license": "MIT",
   "dependencies": {
     "canvas": "^2.4.1",
-    "clamp": "^1.0.1"
+    "clamp": "^1.0.1",
+    "meow": "^5.0.0"
   },
   "scripts": {
+    "lint": "eslint \"**/*.js\"",
     "deploy": "now --target production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@gmartigny/eslint-config"
+    ]
+  },
+  "devDependencies": {
+    "@gmartigny/eslint-config": "^1.2.4",
+    "eslint": "^5.16.0"
   }
 }

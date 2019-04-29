@@ -5,3 +5,5 @@ const livePreview = (img, width, height, color) => {
     img.src = url;
     return url;
 };
+
+export default livePreview;

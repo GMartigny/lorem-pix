@@ -31,8 +31,9 @@
     <figcaption id="caption"></figcaption>
     <img src="" alt="live preview" id="preview"/>
 </figure>
-<script src="front/live-preview.js"></script>
-<script>
+<script src="front/live-preview.js" type="module"></script>
+<script type="module">
+    import livePreview from "./front/live-preview.js";
     const form = document.getElementById("form");
     const caption = document.getElementById("caption");
     const img = document.getElementById("preview");

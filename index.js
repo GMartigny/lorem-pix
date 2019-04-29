@@ -1,6 +1,14 @@
 const { createCanvas } = require("canvas");
 const clamp = require("clamp");
 
+/**
+ * Create a placeholder image at light speed.
+ * @param {Number} width - Width of the image in pixels (from 1 to 10,000)
+ * @param {Number} [height=width] - Height of the image in pixels (from 1 to 10,000), equal <width> if omitted
+ * @param {String} [color] - Background color of the image, picked randomly if omitted, can be any valid CSSColor [https://developer.mozilla.org/docs/Web/CSS/color_value]
+ * @example loremPix(800, 600, "red");
+ * @return {String} Base 64 encoding of the image
+ */
 const loremPix = (width, height = width, color = `#${Math.random().toString(16).slice(-6)}`) => {
     if (!width) {
         throw RangeError("Lorem-pix function need at least one non-null argument.");
