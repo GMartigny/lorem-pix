@@ -2,6 +2,7 @@ workflow "Deploy to now on tag" {
   resolves = [
     "NPM install",
     "Now deploy to prod",
+    "NPM publish",
   ]
   on = "push"
 }
@@ -28,4 +29,11 @@ action "Now deploy to prod" {
   secrets = ["ZEIT_TOKEN"]
   args = "--target production"
   needs = ["NPM test"]
+}
+
+action "NPM publish" {
+  uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
+  needs = ["NPM test"]
+  args = "publish"
+  secrets = ["NPM_AUTH_TOKEN"]
 }
