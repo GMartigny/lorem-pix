@@ -1,10 +1,23 @@
 {
   "name": "lorem-pix",
   "version": "1.1.0",
-  "description": "",
+  "description": "Create placeholder image at the speed of light.",
+  "keywords": [
+    "image",
+    "picture",
+    "placeholder",
+    "filler",
+    "cli",
+    "web-api"
+  ],
   "main": "index.js",
   "bin": "cli.js",
   "author": "GMartigny <guillaume.martigny@gmail.com>",
+  "homepage": "https://github.com/GMartigny/lorem-pix",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GMartigny/lorem-pix.git"
+  },
   "license": "MIT",
   "dependencies": {
     "canvas": "^2.4.1",
