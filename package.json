@@ -13,15 +13,19 @@
   },
   "scripts": {
     "lint": "eslint \"**/*.js\"",
-    "deploy": "now --target production"
+    "deploy": "now --target production",
+    "test": "ava"
   },
   "eslintConfig": {
     "extends": [
-      "@gmartigny/eslint-config"
+      "@gmartigny/eslint-config",
+      "plugin:ava/recommended"
     ]
   },
   "devDependencies": {
     "@gmartigny/eslint-config": "^1.2.4",
-    "eslint": "^5.16.0"
+    "ava": "^1.4.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-ava": "^6.0.0"
   }
 }
