@@ -30,6 +30,11 @@ loremPix(<width>, <height>, <color>);
 
 [https://lorem-pix.now.sh](https://lorem-pix.now.sh)
 
+## Example
+
+![Image example](https://lorem-pix.now.sh/api/200/150/lightsteelblue)
+> https://lorem-pix.now.sh/api/200/150/lightsteelblue
+
 ## License
 
 [MIT](license)
