@@ -1,4 +1,7 @@
 # Lorem-pix
+[![NPM version](https://flat.badgen.net/npm/v/lorem-pix)](https://www.npmjs.com/package/lorem-pix)
+[![NPM weekly download](https://flat.badgen.net/npm/dw/lorem-pix)](https://www.npmjs.com/package/lorem-pix)
+[![package publish size](https://flat.badgen.net/packagephobia/publish/lorem-pix)](https://packagephobia.now.sh/result?p=lorem-pix)
 
 Create placeholder image at the speed of light.
 
