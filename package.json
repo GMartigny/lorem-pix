@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "canvas": "^2.4.1",
+    "canvas": "^2.5.0",
     "clamp": "^1.0.1",
     "meow": "^5.0.0"
   },
@@ -36,9 +36,9 @@
     ]
   },
   "devDependencies": {
-    "@gmartigny/eslint-config": "^1.2.4",
-    "ava": "^1.4.1",
+    "@gmartigny/eslint-config": "^1.2.6",
+    "ava": "^2.0.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-ava": "^6.0.0"
+    "eslint-plugin-ava": "^7.0.0"
   }
 }

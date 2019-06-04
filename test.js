@@ -7,7 +7,7 @@ const measure = (data) => {
     return {
         width: buffer.readUInt32BE(16),
         height: buffer.readUInt32BE(20),
-    }
+    };
 };
 
 test("With width and height", (t) => {
