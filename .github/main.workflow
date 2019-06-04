@@ -1,28 +1,26 @@
 workflow "Deploy to now on tag" {
   resolves = [
-    "NPM install",
     "Now deploy to prod",
-    "NPM publish",
+    "npm publish",
   ]
   on = "push"
 }
 
-action "NPM install" {
+action "npm install" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "install"
-  needs = ["Filter only tags"]
 }
 
-action "NPM test" {
+action "npm test" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "test"
-  needs = ["NPM install"]
+  needs = ["npm install"]
 }
 
 action "Filter only tags" {
   uses = "actions/bin/filter@3c0b4f0e63ea54ea5df2914b4fabf383368cd0da"
   args = "tag"
-  needs = ["NPM test"]
+  needs = ["npm test"]
 }
 
 action "Now deploy to prod" {
@@ -32,9 +30,9 @@ action "Now deploy to prod" {
   needs = ["Filter only tags"]
 }
 
-action "NPM publish" {
+action "npm publish" {
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
-  needs = ["NPM test"]
+  needs = ["Filter only tags"]
   args = "publish"
   secrets = ["NPM_AUTH_TOKEN"]
 }
