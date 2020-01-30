@@ -33,5 +33,7 @@ test("With only width", (t) => {
 });
 
 test("Throw without arguments", (t) => {
-    t.throws(() => loremPix(), RangeError);
+    t.throws(() => loremPix(), {
+        instanceOf: RangeError,
+    });
 });
