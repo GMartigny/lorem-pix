@@ -27,7 +27,8 @@
     },
     "scripts": {
         "lint": "eslint \"**/*.js\"",
-        "test": "ava"
+        "test": "ava",
+        "now-build": "yum install libuuid-devel libmount-devel && cp /lib64/{libuuid,libmount,libblkid}.so.1 node_modules/canvas/build/Release/ && echo 'Done !'"
     },
     "eslintConfig": {
         "extends": [
