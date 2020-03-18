@@ -1,5 +1,6 @@
 .idea/
 .github/
+.now/
 api/
 node_modules/
 public/
