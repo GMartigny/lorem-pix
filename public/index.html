@@ -28,7 +28,9 @@
     <input type="color" name="color" id="color"/>
 </form>
 <figure>
-    <figcaption id="caption"></figcaption>
+    <figcaption>
+        <a id="caption"></a>
+    </figcaption>
     <img src="" alt="live preview" id="preview"/>
 </figure>
 <script type="module">
@@ -42,7 +44,9 @@
         const { width, height, color } = form;
         clearTimeout(timeout);
         timeout = setTimeout(() => {
-            caption.textContent = livePreview(img, width.value, height.value, color.value);
+            const url = livePreview(img, width.value, height.value, color.value);
+            caption.textContent = url;
+            caption.href = url;
         }, 200);
     });
 </script>
