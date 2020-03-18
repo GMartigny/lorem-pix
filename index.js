@@ -9,7 +9,7 @@ const clamp = require("clamp");
  * @example loremPix(800, 600, "red");
  * @return {String} Base 64 encoding of the image
  */
-const loremPix = (width, height = width, color = `#${Math.random().toString(16).slice(-6)}`) => {
+module.exports = (width, height = width, color = `#${Math.random().toString(16).slice(-6)}`) => {
     if (!width) {
         throw RangeError("Lorem-pix function need at least one non-null argument.");
     }
@@ -41,5 +41,3 @@ const loremPix = (width, height = width, color = `#${Math.random().toString(16).
 
     return canvas.toDataURL("image/png");
 };
-
-module.exports = loremPix;

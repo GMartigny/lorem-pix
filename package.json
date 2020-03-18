@@ -27,7 +27,6 @@
     },
     "scripts": {
         "lint": "eslint \"**/*.js\"",
-        "deploy": "now --target production",
         "test": "ava"
     },
     "eslintConfig": {
