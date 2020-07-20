@@ -23,7 +23,7 @@ loremPix(<width>, <height>, <color>);
 
 ### CLI
 
-    $ npx lorem-pix <width> <height> <color>
+A [CLI version](https://github.com/GMartigny/lorem-pix) is also available for this package.
 
 
 ### Web API

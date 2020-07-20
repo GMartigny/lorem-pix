@@ -7,11 +7,9 @@
         "picture",
         "placeholder",
         "filler",
-        "cli",
         "web-api"
     ],
     "main": "index.js",
-    "bin": "cli.js",
     "author": "GMartigny",
     "homepage": "https://github.com/GMartigny/lorem-pix",
     "funding": "https://github.com/GMartigny/lorem-pix?sponsor=1",
@@ -22,8 +20,7 @@
     "license": "MIT",
     "dependencies": {
         "canvas": "^2.6.1",
-        "clamp": "^1.0.1",
-        "meow": "^6.0.0"
+        "clamp": "^1.0.1"
     },
     "scripts": {
         "lint": "eslint \"**/*.js\"",
