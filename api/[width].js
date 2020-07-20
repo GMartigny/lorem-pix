@@ -1,7 +1,10 @@
+const allow = require("allow-cors");
 const loremPix = require("..");
 
 module.exports = (request, response) => {
     const { width } = request.query;
+
+    allow(response);
 
     const data = loremPix(Number(width))
         .replace(/^data:image\/png;base64,/, "");

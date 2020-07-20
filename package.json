@@ -19,6 +19,7 @@
     },
     "license": "MIT",
     "dependencies": {
+        "allow-cors": "^1.0.0",
         "canvas": "^2.6.1",
         "clamp": "^1.0.1"
     },
