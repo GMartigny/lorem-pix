@@ -1,7 +1,6 @@
 # Lorem-pix
 
 [![Package version](https://flat.badgen.net/npm/v/lorem-pix)](https://www.npmjs.com/package/lorem-pix)
-[![Package size](https://flat.badgen.net/bundlephobia/minzip/lorem-pix)](https://bundlephobia.com/result?p=lorem-pix)
 
 Create placeholder image at the speed of light.
 
@@ -28,6 +27,7 @@ A [CLI version](https://github.com/GMartigny/lorem-pix) is also available for th
 
 ### Web API
 
+    https://lorem-pix.now.sh/api/<width>
     https://lorem-pix.now.sh/api/<width>/<height>
     https://lorem-pix.now.sh/api/<width>/<height>/<color>
 
