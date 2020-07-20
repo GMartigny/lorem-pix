@@ -22,7 +22,7 @@ loremPix(<width>, <height>, <color>);
 
 ### CLI
 
-A [CLI version](https://github.com/GMartigny/lorem-pix) is also available for this package.
+A [CLI version](https://github.com/GMartigny/lorem-pix-cli) is also available for this package.
 
 
 ### Web API
